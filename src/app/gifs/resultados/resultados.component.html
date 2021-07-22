@@ -1,0 +1,14 @@
+
+<p class="text-center fs-4" *ngIf="busqueda">Resultados asocioados con: <span class="text-primary">{{ busqueda | titlecase }}</span></p>
+
+<div class="row">
+    <div *ngFor="let gif of resultados"
+    class="col-md-4 col-ms-4">
+        <div class="card m-3 h-90 animate__animated animate__bounce animate__delay-0.2s">
+            <img [src]="gif.images.downsized_medium.url" class="card-img-top" [alt]="gif.title">
+            <div class="card-body text-dark">
+                <p class="card-text">{{ gif.title }}</p >
+            </div>
+        </div>
+    </div>
+</div>

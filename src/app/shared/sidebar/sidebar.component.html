@@ -14,5 +14,7 @@
         (click)="buscar(item)">
         {{ item | titlecase }} 
       </a>
+
     </div>
+    <button type="button" class="btn btn-primary position-fixed bottom-0 mb-5" (click)="vaciarHistorial()" [disabled]="!(historial.length>0)">Vaciar historial</button>
   </div>

@@ -18,4 +18,9 @@ export class SidebarComponent{
   buscar(tema: string): void{
     this.gifsService.buscar(tema);
   }
+
+  vaciarHistorial(): void{
+    this.gifsService.vaciarHistorial();
+  }
+
 }
